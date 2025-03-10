@@ -6,16 +6,24 @@
     <title>Three.js Menu Example</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background-color: #f0f0f0; }
         canvas { display: block; }
         #menuButton {
             position: absolute;
             top: 10px;
             left: 10px;
             z-index: 100;
-            padding: 10px;
-            background-color: #fff;
-            border: 1px solid #ccc;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+        #menuButton:hover {
+            background-color: #0056b3;
         }
         #menu {
             display: none;
@@ -23,25 +31,36 @@
             top: 50px;
             left: 10px;
             z-index: 100;
-            padding: 10px;
+            padding: 20px;
             background-color: #fff;
             border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         #menu label {
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #333;
         }
         #menu input[type="range"] {
             width: 100%;
+            margin-top: 5px;
         }
         #stopButton {
             display: block;
-            margin-top: 10px;
-            padding: 10px;
-            background-color: #f00;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #dc3545;
             color: #fff;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+        #stopButton:hover {
+            background-color: #c82333;
         }
     </style>
 </head>
