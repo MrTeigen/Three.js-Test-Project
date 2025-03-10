@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js Menu Example</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        canvas { display: block; }
+        #menuButton {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 100;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        #menu {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            z-index: 100;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        #menu label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        #menu input[type="range"] {
+            width: 100%;
+        }
+        #stopButton {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f00;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="menuButton">Menu</button>
+    <div id="menu">
+        <label>
+            <input type="radio" name="object" value="earth" checked> Earth
+            <input type="radio" name="object" value="die"> Die
+        </label>
+        <label>
+            Velocity X: <input type="range" id="velocityX" min="0" max="0.1" step="0.01" value="0.02">
+        </label>
+        <label>
+            Velocity Y: <input type="range" id="velocityY" min="0" max="0.1" step="0.01" value="0.02">
+        </label>
+        <label>
+            Size: <input type="range" id="size" min="0.5" max="2" step="0.1" value="1">
+        </label>
+        <label>
+            Rotation Speed X: <input type="range" id="rotationSpeedX" min="0" max="0.1" step="0.01" value="0.01">
+        </label>
+        <label>
+            Rotation Speed Y: <input type="range" id="rotationSpeedY" min="0" max="0.1" step="0.01" value="0.01">
+        </label>
+        <label>
+            Rotation Speed Z: <input type="range" id="rotationSpeedZ" min="0" max="0.1" step="0.01" value="0.01">
+        </label>
+        <button id="stopButton">Stop</button>
+    </div>
+    <script type="module" src="main.js"></script>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.174.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.174.0/examples/jsm/"
+          }
+        }
+    </script>
+</body>
+</html>
