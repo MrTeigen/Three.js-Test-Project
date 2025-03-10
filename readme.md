@@ -1,6 +1,6 @@
 # Three.js Test Project
 
-This project is a simple demonstration of using Three.js to create and animate 3D objects in a web browser. The project features an interactive menu that allows users to control various aspects of the animation, such as the velocity, size, and rotation speed of the objects.
+This project is a simple demonstration of using Three.js to create and animate 3D objects in a web browser. The project features an interactive menu that allows users to control various aspects of the animation, such as the velocity, size, and rotation speed of the objects. You can test it here: https://mrteigen.github.io/Three.js-Test-Project/
 
 ## Features
 
